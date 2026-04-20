@@ -1,0 +1,235 @@
+.login-page {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(circle at top, #8ca1d3, #0a0f17);
+}
+
+/* glass card */
+.login-card {
+  width: 380px;
+  padding: 28px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* title */
+.login-card h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* subtitle */
+.subtext {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+/* inputs */
+.login-card input {
+  padding: 12px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(17,24,39,0.6);
+  color: white;
+
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #22c55e;
+}
+
+/* button */
+.login-card button {
+  margin-top: 6px;
+
+  padding: 12px;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #22c55e, #06b6d4);
+  color: black;
+
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.login-card button:hover {
+  transform: translateY(-2px);
+}
+
+/* footer */
+.footer-text {
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #9ca3af;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.footer-text span {
+  color: #22c55e;
+  cursor: pointer;
+}.error-text {
+  color: #ef4444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+
+/* Container & Background */
+.dashboard {
+  min-height: 100vh;
+  padding: 24px;
+  background: radial-gradient(circle at top, #0f172a, #0a0f17);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #22c55e, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar button {
+  padding: 8px 16px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.navbar button:hover {
+  background: #ef4444;
+  color: white;
+}
+
+/* Hero Streak Banner */
+.streak-banner {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(6, 182, 212, 0.15));
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #22c55e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid Layout */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reusable Glass Card */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Stats Styling */
+.small-card p {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  color: #e5e7eb;
+}
+
+.small-card p strong {
+  color: #22c55e;
+}
+
+/* Inputs & Form consistency inside Dashboard */
+.card input, .card select, .card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(17, 24, 39, 0.6);
+  color: white;
+  box-sizing: border-box;
+}
+
+.card button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #22c55e, #06b6d4);
+  color: black;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.Title {
+  font-size: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  color: #e5e7eb;
+}
+
